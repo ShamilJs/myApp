@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.container {
+  margin: 0 auto;
+  max-width: 470px;
+  padding-top: 255px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  font-family: Roboto;
+  font-size: 36px;
+  line-height: 42px;
+  color: #252525;
+  text-shadow: -2px -4px 3px #FFFFFF, 2px 4px 3px rgba(0, 0, 0, 0.25);
+  margin-bottom: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img{
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.target__left{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  height: 200px;
+  width: 187px;
 }
 
-.App-link {
-  color: #61dafb;
+.target__left img{
+  position: absolute;
+  
+}
+.target__left img:first-child {
+  left: 35px;
+  top: 0;
+  
+}
+.target__left img:last-child {
+  left: 0;
+  bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.target__right{
+  width: 306px;
+  height: 90px;
+  background: url("../src/img/3.png") 0 0/100% 100% no-repeat;
+  padding: 10px 5px 5px 40px;
+}
+
+.target{
+  display: flex;
+}
+
+.target__right-sp{
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  border-bottom: 1px dashed gray;
+  margin-right: 10px;
+}
+
+.form-dnd__up div{
+  width: 482px;
+  height: 45px;
+  border-bottom: 1px solid #4B4B4B;
+}
+
+.form-dnd__down{
+  margin-top: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-dnd__down div{
+  background: #FFFFFF;
+  border: 1px solid #C9C9C9;
+  box-shadow: 0px 8px 4px -6px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  padding: 2px 10px;
+  margin-right: 10px;
+  cursor: grab;
 }
