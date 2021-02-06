@@ -7,6 +7,8 @@ interface TargetProps {
 
 export const Target: React.FC<TargetProps> = ({str}) => {
 	const arrRuss: any = str.russia.split(' ')
+
+	
 	
 	return (
 		<div className="target">
